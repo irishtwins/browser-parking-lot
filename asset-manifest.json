@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/browser-paking-lot/static/css/main.964fdded.css",
+    "main.js": "/browser-paking-lot/static/js/main.854a2277.js",
+    "index.html": "/browser-paking-lot/index.html",
+    "main.964fdded.css.map": "/browser-paking-lot/static/css/main.964fdded.css.map",
+    "main.854a2277.js.map": "/browser-paking-lot/static/js/main.854a2277.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.964fdded.css",
+    "static/js/main.854a2277.js"
+  ]
+}
