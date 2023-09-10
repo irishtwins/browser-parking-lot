@@ -47,7 +47,7 @@ Description
             id="prio-high"
           />
           {' '}
-          <Label for="prio-high">
+          <Label for="prio-high" className="me-3">
             High
           </Label>
           <Input
@@ -57,7 +57,7 @@ Description
             id="prio-medium"
           />
           {' '}
-          <Label for="prio-medium">
+          <Label for="prio-medium" className="me-3">
             Medium
           </Label>
           <Input
@@ -67,7 +67,7 @@ Description
             id="prio-low"
           />
           {' '}
-          <Label for="prio-low">
+          <Label for="prio-low" className="me-3">
             Low
           </Label>
         </FormGroup>
