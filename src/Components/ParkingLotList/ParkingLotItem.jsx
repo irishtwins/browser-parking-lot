@@ -1,15 +1,23 @@
 import React from 'react';
-import { Card, CardHeader, CardBody, CardTitle, CardText } from 'reactstrap';
+import { Card, CardHeader, CardBody, CardTitle, CardText, Button } from 'reactstrap';
 
-export default function ParkingLotItem({ id, date, priority, link, description}) {
+export default function ParkingLotItem({ id, date, priority, link, description, deleteItem}) {
+  
+  function handleDelete() {
+    deleteItem(id);
+  }
+
   return (
     <Card
       className="my-2 parking-lot-item-container"
       color="secondary"
       inverse
     >
-      <CardHeader>
+      <CardHeader className="card-header">
         { date } (Priority: { priority })
+        <Button color="danger" className="delete-button" onClick={handleDelete}>
+          <strong>X</strong>
+        </Button>
       </CardHeader>
       <CardBody>
         <CardTitle tag="h5">

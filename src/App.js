@@ -36,6 +36,12 @@ function App() {
     ]);
   }
 
+  function deleteItem(id) {
+      setParkingLotItems((oldItems) =>
+            oldItems.filter((item) => item.id !== id)
+      );      
+  }
+
   return (
     <div className="App">
       <header>
@@ -44,7 +50,9 @@ function App() {
       </header>
       <main>
           <ParkingLotForm addItem={addItem} />
-          <ParkingLotList parkingLotItems={parkingLotItems} />
+          <ParkingLotList 
+              parkingLotItems={parkingLotItems} 
+              deleteItem={deleteItem} />
       </main>
     </div>
   );
