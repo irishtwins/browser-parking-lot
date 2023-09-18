@@ -37,10 +37,10 @@ function App() {
 
   function deleteItem(id) {
       setParkingLotItems(function(oldItems) {
-            let newitems = oldItems.filter((item) => item.id !== id);
+            let newItems = oldItems.filter((item) => item.id !== id);
             localStorage.setItem("items", JSON.styringify(newItems));
             
-            return newitems;
+            return newItems;
       });      
   }
 
