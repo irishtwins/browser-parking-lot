@@ -6,22 +6,7 @@ import ParkingLotList from "./Components/ParkingLotList/ParkingLotList";
 import "./App.css";
 
 function App() {
-  let [parkingLotItems, setParkingLotItems] = useState([
-      {
-          id: nanoid(),
-          date: "27/06/2023",
-          priority: "Low", 
-          link: "https://google.com/",
-          description: "This is where you can find the ultimate source of truth.",
-      },
-      {
-          id: nanoid(),
-          date: "29/08/2023",
-          priority: "Medium", 
-          link: "https://react.dev/",
-          description: "React documentation and tutorial",
-      },
-  ]);
+  let [parkingLotItems, setParkingLotItems] = useState([]);
 
   function addItem(date, link, description, priority) {
     setParkingLotItems((oldItems) => [    
