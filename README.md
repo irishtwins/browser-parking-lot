@@ -1,5 +1,7 @@
 # Browser Parking Lot
 
+Host URL: https://irishtwins.github.io/browser-parking-lot/
+
 The objective of this project is to store useful links with a todo item that can be prioritized using the labels HIGH, MEDIUM, LOW.
 
 An item contains:
