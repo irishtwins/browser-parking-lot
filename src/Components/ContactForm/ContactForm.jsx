@@ -38,7 +38,7 @@ export default function Contact() {
              <Input
                id="phone"
                name="phone"
-               placeholder = "661-123-4567"
+               type ="phone"
              />
           </FormGroup>
         <Button type="submit">
