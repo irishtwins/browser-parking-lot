@@ -9,15 +9,18 @@ const PRIORITIES = {
   High: 'High'
 }
 
-export default function ParkingLotForm({ addItem }) {
+function mdyToYmd(mdyString) {
+  let [M, d, y] = mdyString.split('/')
+  return `${y}-${M}-${d}`;
+}
 
-  const [date, setDate] = useState('');
-  const [link, setLink] = useState('');
-  const [description, setDescription] = useState('');
-  const [priority, setPriority] = useState(PRIORITIES.Medium);
+export default function ParkingLotForm({ submitItem, defaultDate = '', defaultPriority = PRIORITIES.Medium, defaultLink = '', defaultDescription = '' }) {
 
-// const handleChange = setter => (e => setter(e.target.value));
-// instead of handleDateChange, you can pass handleChange(setDate)
+
+  const [date, setDate] = useState(mdyToYmd(defaultDate));
+  const [link, setLink] = useState(defaultLink);
+  const [description, setDescription] = useState(defaultDescription);
+  const [priority, setPriority] = useState(defaultPriority);
 
   function handleDateChange(e) {
     setDate(e.target.value);
@@ -40,8 +43,7 @@ export default function ParkingLotForm({ addItem }) {
 
     const [y, M, d] = date.split('-');
     const formattedDate = `${M}/${d}/${y}`;
-
-    addItem(formattedDate, link, description, priority);
+    submitItem(formattedDate, link, description, priority);
 
     setDate('');
     setLink('');
@@ -50,6 +52,7 @@ export default function ParkingLotForm({ addItem }) {
   }
 
   return (
+    <div className="form-container">
       <Form data-bs-theme="dark" className="parking-lot-form" onSubmit={handleSubmit}>
         <FormGroup className="parking-lot-row">
           <Label for="link-date">
@@ -90,18 +93,18 @@ export default function ParkingLotForm({ addItem }) {
             required
           />
         </FormGroup>
-        <FormGroup className="parking-lot-row d-flex flex-wrap">
+        <FormGroup className="parking-lot-radio">
           <div>
             <Input
               name="radio-priority"
               type="radio"
               value="High"
-              id="prio-high"
+              id="priority-high"
               checked={priority === PRIORITIES.High}
               onChange={handlePriorityChange}
             />
-            {' '}
-            <Label for="prio-high" className="me-3">
+            &nbsp;
+            <Label for="priority-high" className="me-3">
             High
             </Label>
           </div>
@@ -114,8 +117,8 @@ export default function ParkingLotForm({ addItem }) {
               checked={priority === PRIORITIES.Medium}
               onChange={handlePriorityChange}
             />
-            {' '}
-            <Label for="prio-medium" className="me-3">
+            &nbsp;
+            <Label for="priority-medium" className="me-3">
             Medium
             </Label>
           </div>
@@ -128,15 +131,16 @@ export default function ParkingLotForm({ addItem }) {
               checked={priority === PRIORITIES.Low}
               onChange={handlePriorityChange}
             />
-            {' '}
-            <Label for="prio-low" className="me-3">
+            &nbsp;
+            <Label for="prio-low" className="radio-label">
             Low
             </Label>
           </div>  
         </FormGroup>
-        <Button type="submit">
-          Submit
-        </Button>
+        <FormGroup className="button-container">
+          <Button type="submit" className="action-button">submit</Button>
+        </FormGroup>
       </Form>
-    );
+    </div>
+  );
 }

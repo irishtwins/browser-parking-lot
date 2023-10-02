@@ -1,4 +1,47 @@
 .App {
+  user-select: none;
+  min-width: 270px;
   text-align: center;
+  letter-spacing: 2px;
+  overflow: hidden;
 }
  
+.header {
+  margin: 20px;
+}
+
+.sub-heading {
+  font-style: italic;
+  margin: 20px;
+  color: antiquewhite;
+  font-size: 20px;
+}
+
+.action-button {
+  background-color: antiquewhite;
+  color: black;
+  font-weight: 500;
+  font-style: italic;
+  border-radius: 10px;
+  -webkit-border-radius: 15px 0px 15px 0px;
+  border-radius: 15px 0px 15px 0px;
+  --bs-btn-hover-border-color: antiquewhite;
+  text-shadow: 1px 2px 2px lightgray;
+}
+
+
+/**** Media Queries ****/
+
+@media screen and (max-width: 576px) {
+
+  .header {
+    margin: 15px;
+    line-height: 1;
+  }
+
+  .sub-heading {
+    font-size: 16px;
+    padding: 0 15px;
+    margin: 0;
+  }
+}

@@ -6,3 +6,36 @@
     text-align: left;
     min-width: 250px;
 }   
+
+
+
+
+.form-control {
+    margin-bottom: 20px;
+}
+
+.parking-lot-radio {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.form-check-input:checked {
+    background-color: paleturquoise;
+    border-color: blue;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+/***** Media Queries ****/
+
+@media sceeen and (max-width: 576px){
+
+    .parking-lot-form {
+        margin-top: 30px;
+        padding: 0 15px;
+    }
+}
