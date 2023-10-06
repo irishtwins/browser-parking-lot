@@ -14,7 +14,7 @@ export default function ParkingLotItem({ id, date, priority, link, description, 
   }
 
 
-
+  
   function handleEdit() {
     setEdit(true);
   }
