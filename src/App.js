@@ -76,26 +76,26 @@ function App() {
     });
   }
 
-
   return (
     <div className="App">
-      <div>
-        <BrowserRouter>
-          <NavBar />
-        </BrowserRouter>
-      </div>
-          <h1 className= "header">Browser Parking Lot</h1>
-          <p className="sub-heading">Send most of your browser tabs into retirement.</p>
+      <NavBar />
+      <h1 className="header">BROWSER PARKING LOT</h1>
+      <p className="sub-heading">Send most of your browser tabs into retirement.</p>
       <main>
-          <ParkingLotForm submitItem={addItem} />
-          <ParkingLotList 
-              parkingLotItems={parkingLotItems} 
-              editItem= {editItem}
-              deleteItem={deleteItem} />
+        <ParkingLotForm submitItem={ addItem } />
+        <ParkingLotList 
+          parkingLotItems={ parkingLotItems } 
+          editItem={ editItem }
+          deleteItem= { deleteItem }/>
+        <div className="contact-form-container">
           <ContactForm />
+        </div>
       </main>
+      <footer>
+        Providing less stress and hassle.
+      </footer>
     </div>
   );
 }
-
+ 
 export default App;

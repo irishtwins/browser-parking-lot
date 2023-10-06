@@ -29,6 +29,10 @@
   text-shadow: 1px 2px 2px lightgray;
 }
 
+.contact-form-container {
+  display: flex;
+  justify-content: space-evenly;
+}
 
 /**** Media Queries ****/
 
@@ -45,4 +49,38 @@
     margin: 0;
   }
 
+}
+
+/*** Footer Styles ***/
+
+footer {
+  text-align: end;
+  margin: 100px 20px 5px;
+  font-size: x-small;
+}
+
+/**** Media Queries ****/
+
+@media screen and (max-width: 576px) {
+  
+  .header {
+    margin: 15px;
+    line-height: 1;
+  }
+  
+  .sub-heading {
+    font-size: 16px;
+    padding: 0 15px;
+    margin: 0;
+  }
+
+  .contact-form-container {
+    display: grid;
+    justify-items: center;
+  }
+  
+  footer {
+    text-align: center;
+    margin: 50px 50px 15px;
+  }
 }

@@ -5,7 +5,7 @@ import './ParkingLot.css';
 
 export default function ParkingLotList({ parkingLotItems, deleteItem, editItem }) {
   let ParkingLotItemsJsx = parkingLotItems.map( item => 
-    <ParkingLotItem key={item.id} deleteItem={deleteItem} editItem={editItem} />,
+    <ParkingLotItem key={item.id} deleteItem={deleteItem} editItem={editItem} {...item} />,
   );
 
   return (

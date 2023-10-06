@@ -13,8 +13,6 @@ export default function ParkingLotItem({ id, date, priority, link, description, 
     deleteItem(id);
   }
 
-
-  
   function handleEdit() {
     setEdit(true);
   }
