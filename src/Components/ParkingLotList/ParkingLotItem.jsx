@@ -64,9 +64,6 @@ export default function ParkingLotItem({ id, date, priority, link, description, 
       className="my-2 parking-lot-item-container"
       color="dark"
       inverse
-      style={{
-        width: '18rem'
-      }}
     >
       { isEdit ? EditCardContentJsx : ReadOnlyCardContentJsx }
     </Card>
