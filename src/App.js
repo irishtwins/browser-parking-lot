@@ -55,7 +55,6 @@ function App() {
   function editItem(id, date, link, description, priority) {
     
     setParkingLotItems(function (oldItems) {
-       // let newItems = oldItems.map(item => item.id === id ? ({id, date, link, description, priority}) : item);
       let newItems =[];
 
       for (let item of oldItems) {
