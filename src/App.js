@@ -1,7 +1,5 @@
 import { useState, useEffect } from 'react';
 import { nanoid } from "nanoid";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Button } from "reactstrap";
 
 import ParkingLotForm from './Components/ParkingLotForm/ParkingLotForm';
 import ParkingLotList from './Components/ParkingLotList/ParkingLotList';
