@@ -90,7 +90,6 @@ function App() {
         </div>
       </main>
       <footer>
-        Providing less stress and hassle.
       </footer>
     </div>
   );
