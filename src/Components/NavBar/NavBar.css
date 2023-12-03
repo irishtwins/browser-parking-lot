@@ -1,13 +1,9 @@
 /*** Main Styles ***/
 
 .navbar {
-    margin: 15px 15px 80px 15px;
+    margin: 10px 15px 100px 10px;
     display: flex;
     justify-content: flex-end;
-    font-size: large;
-    border-bottom: 7px dotted #f5f3f2d7
-}
-
-.nav-link {
-    text-shadow: #7a1806 0 -1px 90px, #1c1614 0 -1px 50px, #683706 0 -1px 10px, #211f1f 0 -50px 90px;
+    font-size: medium;
+    border-bottom: 15px ridge #f5f3f2d7
 }

@@ -2,7 +2,7 @@
   user-select: none;
   min-width: 270px;
   text-align: center;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
   overflow: hidden;
 }
  
@@ -11,22 +11,9 @@
 }
 
 .sub-heading {
-  font-style: italic;
-  margin: 20px;
-  color: antiquewhite;
-  font-size: 20px;
-}
-
-.action-button {
-  background-color: antiquewhite;
-  color: black;
-  font-weight: 500;
-  font-style: italic;
-  border-radius: 10px;
-  -webkit-border-radius: 15px 0px 15px 0px;
-  border-radius: 15px 0px 15px 0px;
-  --bs-btn-hover-border-color: antiquewhite;
-  text-shadow: 1px 2px 2px lightgray;
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(233, 230, 195);
+  font-size: 10px;
 }
 
 .contact-form-container {
@@ -49,14 +36,6 @@
     margin: 0;
   }
 
-}
-
-/*** Footer Styles ***/
-
-footer {
-  text-align: end;
-  margin: 100px 20px 5px;
-  font-size: x-small;
 }
 
 /**** Media Queries ****/
