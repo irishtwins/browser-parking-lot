@@ -1,65 +1,25 @@
 .App {
-  user-select: none;
   min-width: 270px;
   text-align: center;
   letter-spacing: 4px;
-  overflow: hidden;
+  word-spacing: 4px;
 }
  
 .header {
-  margin: 20px;
+  margin: 30px;
 }
 
 .sub-heading {
   font-family: 'Courier New', Courier, monospace;
   color: rgb(233, 230, 195);
-  font-size: 10px;
+  font-size: 18px;
 }
 
 .contact-form-container {
-  display: flex;
-  justify-content: space-evenly;
+  display: inline-block;
 }
 
-/**** Media Queries ****/
-
-@media screen and (max-width: 576px) {
-
-  .header {
-    margin: 15px;
-    line-height: 1;
-  }
-
-  .sub-heading {
-    font-size: 16px;
-    padding: 0 15px;
-    margin: 0;
-  }
-
-}
-
-/**** Media Queries ****/
-
-@media screen and (max-width: 576px) {
-  
-  .header {
-    margin: 15px;
-    line-height: 1;
-  }
-  
-  .sub-heading {
-    font-size: 16px;
-    padding: 0 15px;
-    margin: 0;
-  }
-
-  .contact-form-container {
-    display: grid;
-    justify-items: center;
-  }
-  
-  footer {
-    text-align: center;
-    margin: 50px 50px 15px;
-  }
+footer {
+  text-align: center;
+  margin: 50px 20px 20px;
 }

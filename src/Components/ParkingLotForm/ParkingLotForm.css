@@ -1,10 +1,10 @@
 .parking-lot-form {
+    
     margin: 2rem;
-    border: 2px solid whitesmoke;
-    background-color: #111111;
-    padding: 2rem;
-    text-align: left;
-    min-width: 250px;
+    border: 2px outset whitesmoke;
+    background-color: #000000;
+    padding: 3rem;
+    text-align: center;
 }   
 
 .form-container {
@@ -13,7 +13,7 @@
 }
 
 .form-control {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .parking-lot-radio {
@@ -22,37 +22,3 @@
     justify-content: center;
 }
 
-.form-check-input:checked {
-    background-color: paleturquoise;
-    border-color: blue;
-}
-
-.submit-button-container {
-    display: flex;
-    justify-content: center;
-}
-
-.button-container {
-    display: flex;
-    justify-content: center;
-}
-
-/***** Media Queries ****/
-
-@media sceeen and (max-width: 576px){
-
-    .parking-lot-form {
-        margin-top: 30px;
-        padding: 0 15px;
-    }
-
-    .parking-lot-radio {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .me-3 {
-        margin-right: 0;
-    }
-}
